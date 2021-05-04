@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<script type="text/javascript" src="https://gc.kis.v2.scr.kaspersky-labs.com/FD126C42-EBFA-4E12-B309-BB3FDD723AC1/main.js?attr=lx-7nbBvxggVLLQhAW3DazqXVV_-i_4fZcSejs7zOdVeTVOZh0bsZtrKzTNAD82Q8tD2TYU0CjEz6gPo2c_SLJKnTpqbMz1JWi9tIJgw8B5sNq_eVUCsT0xGB02YsK0acB6_aOVLY_ShFnA9Qy_ApyOzjneY-9M9bAwJThxNHNC-0iDdfD-nly1wDukolgH-PoC3tPRbeC3Oyy3NjdfRDDLqYvWW7DJThQhAQbJaHeH5YXlVWhZMg_Sp-_5mCz6sko2Gr3_OCgp41VpEwOVR9UbM6tmFiytQO6D7U-ggvftdQTNXwp9DTYnH9HrOawrpA857UFVFXtZNZnCrnlZ2llst_xnwkd2lA3uFQyBhR07sKLGBDWifqli9XiFiF7MB6mxbDSogK3vN6rCgesVnr1U10yHCZqga_c7fFxbOetZYTO6Xhpr9FFoV5MDN1peCJIqwcmXy9SRk3SVCNQ2X66mOAglvBHU4lSTdXxlvX4r7zws7KRovA1uJV2s2K1fjiWj1-0rbqa8-IVaCwuVwF8ggDvsx88pFRzaxNPA0RtLOqBNGKJI8FIqKKTZ1PdIIZpiF1gBX211mu1nMzQgTnS3lpxnGAcGEHjko-54crrNDotsaJCySjldrqpNdOr06_kx4nIYjgiam64DZk6K6B8yZGpOW8ONXEBTjuvs52LgYvwjmb6TG7BAvIT9l8B1VlBJR_bxwSlnE-q64_8jDQMGucnJCDI-M6CnmKV-qMtARNdPp3YKtgHDPdBAjw2FyPqpNMHYru0z7FHFjRl0NNtpKqx_aZxJbEuMGGwQFDYiK8vmYf9F4-QBgRlx3CNCef_8CUn3klOkictlYS7VOQXy-MI94XAaEQ2L2YZDqSjuQeeG3IjVVzOASnFis3zSKZGS9wKyMi1YMMOG-56zykD2M8CPZppM28zjiX1FukkA" charset="UTF-8"></script><link rel="stylesheet" crossorigin="anonymous" href="https://gc.kis.v2.scr.kaspersky-labs.com/E3E8934C-235A-4B0E-825A-35A08381A191/abn/main.css?attr=aHR0cHM6Ly9sb29rYXNpZGUuZmJzYnguY29tL2ZpbGUvRGVtbzAzLmh0bWw_dG9rZW49QVd6Qnk3dmpBZ0RyR2NtaURteG51Z0RpTUQ1RTRCOFBPZDBva3RWSWNDMWZTdzRlOXdjRHdQek9udTFGUDBraTlCUTk4SDFnOTFnRVVoSndSdU1zSldEN3gzbjktSk93Y1hKbmM4Nkh2MXB0aERfUHV6djVWeThWTVhtX1lmcE05WlZ6czI2aERpTHNSLUdtZUl2SmtXV1FnTFBENGlKWTBrUVpLOVhfMzVSbFBiQnY0eWZpNWw3bDlXaHhUcjdDWGp6YndwMldhaDhVMEMwcTg4N0w4NmlkeC1KdkpwYVM3ZUU5TlNMdzBPNFh1eEtKcl9Na0t4b2hoUm1UVjRpOFlxd1pFZkppTVZyNVl1OFVvY1hYdzVIaUxQWnNubmdCLW0yYTBfZVVVM0Q5aUhaMFg0cnJxUm14ay0xcWFsRTN1WVVid1dGMVhUb2Z1RlJyR2p4T3p6SzlUc21QLS1Vd2xGTzZCak5vNVpud051a0hHRm9xd2hna0FRLXRHZFgxQXBQcjZudEp5aS11cnprSlJVcm93ZFNrc2ZtcndyTER4dmN6VGdlTFhITnNHWXVTQks4YXBhVmhtVGRTWmhFOVlfaEtQUXc5bVp6OU1LbnpKdlo2RHFMMWZnNVZDZ240Mk9DZVMwTFNHZDUwcmxZVUxIWmpyVUpLTkVmSFk1Y1BjUVpKNlh4MllrREZZU3FaSVpwQjNtSXk3SlVENC1OSl9LREp3QmIzLWxEQTRNMFVaT2pjVlN4cU51cG1ZUUhMQm5keTZHN0w0LVg3VGxRaW1LdjRabHRSWnBKUzE1NEhQYmJtZTJjcnZ0cnJkUQ"/></head>
+<body>
+    <h1>Demo 03</h1>
+    <div>
+        From: <select class="fromCur"></select>
+        To: <select class="toCur"></select>
+        <button>Convert currency</button>
+    </div>
+    <div class="result"></div>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function(){
+            let apiURL = "https://free.currconv.com/api/v7/currencies?apiKey=do-not-use-this-key";
+            
+            $.get(apiURL, function(data, status){
+                if(status == 200)
+                {
+                    var curID = Object.keys(data.results);
+                    curID.forEach(function(item){
+                        $(".fromCur").append(`<option value='${item}'>${item}</option>`);
+                        $(".toCur").append(`<option value='${item}'>${item}</option>`);
+                    });
+                }
+            }).done(function(){
+                console.log('DONE');
+            }).fail(function(error){
+                console.log(error.status + " - " + error.statusText);
+            });
+
+            $('button').click(function(){
+                var from = $(".fromCur").val();
+                var to = $(".toCur").val();
+
+                let apiConvert = `https://free.currconv.com/api/v7/convert?q=${from}_${to}&compact=ultra&apiKey=do-not-use-this-key`;
+                
+                $.get(apiConvert, function(data, status){
+                    $(".result").text(data[Object.keys(data)[0]]);
+                });
+            });
+        });
+    </script>
+</body>
+</html>
